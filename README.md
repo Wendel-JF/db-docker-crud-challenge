@@ -10,7 +10,7 @@
 
 ### Clone o repositório
 ```bash
-git clone https://github.com/vinicivs-rocha/db-crud-challenge.git
+git clone https://github.com/Wendel-JF/db-docker-crud-challenge.git
 ```
 
 ### Instale as dependências
