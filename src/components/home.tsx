@@ -1,10 +1,10 @@
 export const Home = ({ children }: { children: JSX.Element[] }) => {
   return (
-    <div class={"flex flex-col justify-center items-center gap-4 w-2/4 h-3/4"}>
+    <div class={"flex flex-col justify-center items-center gap-4 w-1/3 h-full"}>
       <div
         id={"posts"}
         class={
-          "h-full w-full flex flex-col items-center justify-start gap-2  p-2 overflow-auto"
+          "w-full h-4/6 flex flex-col gap-2 p-2 overflow-auto"
         }
       >
         {children}
@@ -14,7 +14,7 @@ export const Home = ({ children }: { children: JSX.Element[] }) => {
         hx-trigger="submit"
         hx-target="#posts"
         hx-swap="beforeend"
-        class={"flex flex-col justify-center items-center gap-2 w-1/2"}
+        class={"flex flex-col justify-self-end items-center gap-2 w-1/2"}
       >
         <div class={"w-full flex flex-col"}>
           <label for="title" class={"text-white"}>

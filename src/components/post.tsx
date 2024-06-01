@@ -14,14 +14,14 @@ export const Post = ({
   <div
     id={`post${id}`}
     class={
-      "flex flex-row items-center justify-between p-4 w-full rounded shadow bg-zinc-50 divide-x divide-zinc-500"
+      "flex flex-row items-center justify-between p-4 w-full rounded shadow bg-zinc-50 hover:bg-zinc-300 divide-x divide-zinc-500"
     }
   >
     <div
-      class={`flex flex-col ${
+       class={`flex flex-col ${
         showSidebar ? "w-4/5" : "w-full"
       } gap-4 cursor-pointer`}
-      hx-get={`/posts/${id}`}
+      hx-get={`${showSidebar ? `/posts/${id}` : `/` }`}
       hx-target="#main"
     >
       <div class={`flex flex-row justify-between items-center`}>

@@ -10,3 +10,4 @@ const client = new Client({
 await client.connect();
 
 export { client as db };
+

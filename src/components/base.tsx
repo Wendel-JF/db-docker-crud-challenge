@@ -20,9 +20,9 @@ export const Base = ({ children }: { children: JSX.Element }) => (
       ></script>
     </head>
     <body class={"h-screen bg-zinc-900"}>
-      <div id={"main"} class={"w-full h-full flex items-center justify-center"}>
+      <main id={"main"} class={"w-full h-full flex items-center justify-center"}>
         {children}
-      </div>
+      </main>
     </body>
   </html>
 );
